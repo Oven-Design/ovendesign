@@ -4,69 +4,114 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Krystal — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
   <!-- Navigation -->
   <nav class="navbar">
-    <a href="#" class="logo">Krystal</a>
+    <div class="nav-brand">
+      <a href="#" class="logo">KRYSTAL</a>
+      <span class="nav-subtitle">Developer &amp; Creator</span>
+    </div>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
+      <li><a href="#projects">Work</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <div class="nav-social">
+      <a href="#" aria-label="GitHub">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+      </a>
+      <a href="#" aria-label="LinkedIn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="#contact" aria-label="Email">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+    </button>
   </nav>
 
   <!-- Hero -->
   <header id="hero" class="hero">
-    <div class="hero-content">
-      <h1>Hi, I'm <span class="highlight">Krystal</span></h1>
-      <p class="tagline">Developer &amp; Creator</p>
+    <canvas id="hero-canvas" class="hero-canvas"></canvas>
+    <div class="hero-content" data-animate>
+      <p class="hero-eyebrow">Hello, I'm</p>
+      <h1 class="hero-name">Krystal</h1>
+      <p class="hero-tagline">Developer &amp; Creator</p>
       <a href="#projects" class="btn">View My Work</a>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
     </div>
   </header>
 
   <!-- About -->
   <section id="about" class="section about">
-    <h2>About Me</h2>
-    <p>
-      Welcome! I'm a passionate developer who loves building things for the web.
-      Replace this with your own story — what drives you, what you're working on,
-      and where you're headed.
-    </p>
+    <div class="section-label" data-animate>About</div>
+    <div class="about-inner">
+      <h2 class="section-heading" data-animate>A passionate developer<br><em>who loves building things</em></h2>
+      <p class="about-text" data-animate>
+        Welcome! I'm a developer who loves crafting beautiful, functional experiences
+        for the web. Replace this with your own story — what drives you, what you're
+        working on, and where you're headed.
+      </p>
+    </div>
   </section>
 
   <!-- Projects -->
   <section id="projects" class="section projects">
-    <h2>Projects</h2>
+    <div class="section-label" data-animate>Work</div>
+    <h2 class="section-heading" data-animate>Selected Projects</h2>
     <div class="project-grid">
-      <article class="project-card">
-        <div class="project-image-placeholder"></div>
-        <h3>Project One</h3>
-        <p>A short description of what this project does and the tech behind it.</p>
-        <div class="project-links">
-          <a href="#" class="btn btn-sm">Live Demo</a>
-          <a href="#" class="btn btn-sm btn-outline">GitHub</a>
+      <article class="project-card" data-animate>
+        <div class="project-image-placeholder">
+          <span class="project-number">01</span>
+        </div>
+        <div class="project-info">
+          <h3>Project One</h3>
+          <p>A short description of what this project does and the tech behind it.</p>
+          <div class="project-links">
+            <a href="#" class="link-arrow">Live Demo →</a>
+            <a href="#" class="link-arrow">GitHub →</a>
+          </div>
         </div>
       </article>
-      <article class="project-card">
-        <div class="project-image-placeholder"></div>
-        <h3>Project Two</h3>
-        <p>A short description of what this project does and the tech behind it.</p>
-        <div class="project-links">
-          <a href="#" class="btn btn-sm">Live Demo</a>
-          <a href="#" class="btn btn-sm btn-outline">GitHub</a>
+      <article class="project-card" data-animate>
+        <div class="project-image-placeholder">
+          <span class="project-number">02</span>
+        </div>
+        <div class="project-info">
+          <h3>Project Two</h3>
+          <p>A short description of what this project does and the tech behind it.</p>
+          <div class="project-links">
+            <a href="#" class="link-arrow">Live Demo →</a>
+            <a href="#" class="link-arrow">GitHub →</a>
+          </div>
         </div>
       </article>
-      <article class="project-card">
-        <div class="project-image-placeholder"></div>
-        <h3>Project Three</h3>
-        <p>A short description of what this project does and the tech behind it.</p>
-        <div class="project-links">
-          <a href="#" class="btn btn-sm">Live Demo</a>
-          <a href="#" class="btn btn-sm btn-outline">GitHub</a>
+      <article class="project-card" data-animate>
+        <div class="project-image-placeholder">
+          <span class="project-number">03</span>
+        </div>
+        <div class="project-info">
+          <h3>Project Three</h3>
+          <p>A short description of what this project does and the tech behind it.</p>
+          <div class="project-links">
+            <a href="#" class="link-arrow">Live Demo →</a>
+            <a href="#" class="link-arrow">GitHub →</a>
+          </div>
         </div>
       </article>
     </div>
@@ -74,8 +119,9 @@
 
   <!-- Skills -->
   <section id="skills" class="section skills">
-    <h2>Skills</h2>
-    <ul class="skill-list">
+    <div class="section-label" data-animate>Skills</div>
+    <h2 class="section-heading" data-animate>What I Work With</h2>
+    <ul class="skill-list" data-animate>
       <li>HTML &amp; CSS</li>
       <li>JavaScript</li>
       <li>React</li>
@@ -87,24 +133,29 @@
 
   <!-- Contact -->
   <section id="contact" class="section contact">
-    <h2>Get in Touch</h2>
-    <p>Interested in working together? Reach out!</p>
-    <form class="contact-form" action="#" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <div class="section-label" data-animate>Contact</div>
+    <h2 class="section-heading" data-animate>Let's Work<br><em>Together</em></h2>
+    <p class="contact-intro" data-animate>Interested in working together? Reach out.</p>
+    <form class="contact-form" action="#" method="POST" data-animate>
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group form-group--last">
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      </div>
       <button type="submit" class="btn">Send Message</button>
     </form>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="social-links">
-      <a href="#" aria-label="GitHub">GitHub</a>
-      <a href="#" aria-label="LinkedIn">LinkedIn</a>
-      <a href="#" aria-label="Twitter">Twitter</a>
+    <div class="footer-inner">
+      <span class="footer-name">Krystal</span>
+      <p>&copy; 2026. All rights reserved.</p>
     </div>
-    <p>&copy; 2026 Krystal. All rights reserved.</p>
   </footer>
 
   <script src="js/main.js"></script>
