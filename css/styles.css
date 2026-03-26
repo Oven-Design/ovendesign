@@ -10,8 +10,8 @@
   --gray-300: #b0b0a8;
   --gray-500: #6b6b63;
   --gray-700: #3a3a35;
-  --font-serif: 'Playfair Display', Georgia, serif;
-  --font-body: 'Space Grotesk', -apple-system, sans-serif;
+  --font-display: 'Sora', -apple-system, sans-serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
   --max-width: 1120px;
   --transition: 0.3s ease;
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
@@ -61,9 +61,10 @@ textarea:focus-visible, summary:focus-visible {
 }
 
 .logo {
-  font-family: var(--font-serif);
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
 }
 
 .nav-links {
@@ -121,16 +122,17 @@ textarea:focus-visible, summary:focus-visible {
 }
 
 .hero-title {
-  font-family: var(--font-serif);
-  font-size: clamp(2.8rem, 6vw, 4.5rem);
-  font-weight: 500;
-  line-height: 1.15;
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
   margin-bottom: 1.5rem;
 }
 
-.hero-title em {
-  font-style: italic;
-  font-weight: 400;
+.hero-title .accent {
+  font-weight: 300;
+  opacity: 0.7;
 }
 
 .word-line { overflow: hidden; display: block; }
@@ -258,15 +260,20 @@ body.loaded .hero-actions { opacity: 1; transform: translateY(0); }
 
 .section-intro h2,
 .about-text h2 {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: clamp(2rem, 3.5vw, 2.8rem);
-  font-weight: 500; line-height: 1.25;
-  letter-spacing: -0.01em;
+  font-weight: 700; line-height: 1.2;
+  letter-spacing: -0.03em;
 }
 
-.section-intro h2 em,
-.about-text h2 em {
-  font-style: italic; font-weight: 400;
+.accent {
+  font-weight: 300;
+  opacity: 0.55;
+}
+
+h2 .accent {
+  font-weight: 300;
+  opacity: 0.55;
 }
 
 /* ===== Work ===== */
@@ -301,8 +308,9 @@ body.loaded .hero-actions { opacity: 1; transform: translateY(0); }
 .work-info { padding: 1.25rem 0 0; }
 
 .work-info h3 {
-  font-family: var(--font-serif);
-  font-size: 1.2rem; font-weight: 500;
+  font-family: var(--font-display);
+  font-size: 1.15rem; font-weight: 600;
+  letter-spacing: -0.02em;
   margin-bottom: 0.25rem;
 }
 
@@ -320,15 +328,16 @@ body.loaded .hero-actions { opacity: 1; transform: translateY(0); }
 }
 
 .section-quote blockquote {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: clamp(1.6rem, 3vw, 2.4rem);
-  font-weight: 400; line-height: 1.4;
+  font-weight: 600; line-height: 1.35;
+  letter-spacing: -0.02em;
   color: var(--dark);
   max-width: 700px;
   margin: 0 auto 1rem;
 }
 
-.section-quote em { font-style: italic; }
+.section-quote .accent { font-weight: 300; opacity: 0.5; }
 
 .section-quote cite {
   font-family: var(--font-body);
@@ -407,14 +416,12 @@ body.loaded .hero-actions { opacity: 1; transform: translateY(0); }
 }
 
 .testimonial blockquote {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: clamp(1.2rem, 2.2vw, 1.5rem);
-  font-weight: 400; line-height: 1.7;
-  font-style: italic;
+  font-weight: 500; line-height: 1.7;
+  letter-spacing: -0.01em;
   margin-bottom: 2rem;
 }
-
-.testimonial em { font-style: italic; }
 
 .testimonial-author {
   display: flex; align-items: center;
@@ -487,13 +494,12 @@ body.loaded .hero-actions { opacity: 1; transform: translateY(0); }
 }
 
 .cta-inner h2 {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: clamp(2rem, 3.5vw, 2.8rem);
-  font-weight: 500; line-height: 1.25;
+  font-weight: 700; line-height: 1.2;
+  letter-spacing: -0.03em;
   margin-bottom: 0.75rem;
 }
-
-.cta-inner h2 em { font-style: italic; font-weight: 400; }
 
 .cta-inner > p {
   font-size: 1rem; font-weight: 300;
