@@ -3,18 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Krystal — Portfolio</title>
+  <title>Whisk Studio — Design Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <!-- Navigation -->
   <nav class="navbar">
-    <a href="#" class="logo">Krystal</a>
+    <a href="#" class="logo">Whisk Studio</a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Let's Talk</a></li>
     </ul>
     <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
   </nav>
@@ -22,89 +25,139 @@
   <!-- Hero -->
   <header id="hero" class="hero">
     <div class="hero-content">
-      <h1>Hi, I'm <span class="highlight">Krystal</span></h1>
-      <p class="tagline">Developer &amp; Creator</p>
-      <a href="#projects" class="btn">View My Work</a>
+      <p class="hero-label">Design Studio</p>
+      <h1>We craft brands<br>that feel like <span class="highlight">a dream</span></h1>
+      <p class="tagline">Branding, web design &amp; creative direction for brands that dare to be soft and bold at once.</p>
+      <a href="#work" class="btn">See Our Work</a>
     </div>
+    <div class="hero-blur hero-blur--1"></div>
+    <div class="hero-blur hero-blur--2"></div>
   </header>
 
   <!-- About -->
   <section id="about" class="section about">
-    <h2>About Me</h2>
-    <p>
-      Welcome! I'm a passionate developer who loves building things for the web.
-      Replace this with your own story — what drives you, what you're working on,
-      and where you're headed.
-    </p>
+    <div class="about-grid">
+      <div class="about-heading">
+        <h2>A studio built on feeling</h2>
+      </div>
+      <div class="about-body">
+        <p>
+          Whisk Studio is a creative design agency dedicated to building brands
+          that evoke emotion. We believe great design should feel like something —
+          warm, inviting, and unmistakably you.
+        </p>
+        <p>
+          From brand identity to full web experiences, we bring a dreamy,
+          intentional approach to everything we touch.
+        </p>
+      </div>
+    </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" class="section projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <article class="project-card">
-        <div class="project-image-placeholder"></div>
-        <h3>Project One</h3>
-        <p>A short description of what this project does and the tech behind it.</p>
-        <div class="project-links">
-          <a href="#" class="btn btn-sm">Live Demo</a>
-          <a href="#" class="btn btn-sm btn-outline">GitHub</a>
-        </div>
+  <!-- Services -->
+  <section id="services" class="section services">
+    <h2>What We Do</h2>
+    <div class="services-grid">
+      <article class="service-card">
+        <span class="service-number">01</span>
+        <h3>Brand Identity</h3>
+        <p>Logos, color palettes, typography systems, and brand guidelines that capture your essence.</p>
       </article>
-      <article class="project-card">
-        <div class="project-image-placeholder"></div>
-        <h3>Project Two</h3>
-        <p>A short description of what this project does and the tech behind it.</p>
-        <div class="project-links">
-          <a href="#" class="btn btn-sm">Live Demo</a>
-          <a href="#" class="btn btn-sm btn-outline">GitHub</a>
-        </div>
+      <article class="service-card">
+        <span class="service-number">02</span>
+        <h3>Web Design</h3>
+        <p>Beautiful, responsive websites that feel as good as they look — designed with intention.</p>
       </article>
-      <article class="project-card">
-        <div class="project-image-placeholder"></div>
-        <h3>Project Three</h3>
-        <p>A short description of what this project does and the tech behind it.</p>
-        <div class="project-links">
-          <a href="#" class="btn btn-sm">Live Demo</a>
-          <a href="#" class="btn btn-sm btn-outline">GitHub</a>
-        </div>
+      <article class="service-card">
+        <span class="service-number">03</span>
+        <h3>Creative Direction</h3>
+        <p>Visual strategy and art direction to keep your brand cohesive across every touchpoint.</p>
+      </article>
+      <article class="service-card">
+        <span class="service-number">04</span>
+        <h3>Print &amp; Packaging</h3>
+        <p>Tangible design pieces — from business cards to product packaging — that leave a lasting impression.</p>
       </article>
     </div>
   </section>
 
-  <!-- Skills -->
-  <section id="skills" class="section skills">
-    <h2>Skills</h2>
-    <ul class="skill-list">
-      <li>HTML &amp; CSS</li>
-      <li>JavaScript</li>
-      <li>React</li>
-      <li>Node.js</li>
-      <li>Python</li>
-      <li>Git &amp; GitHub</li>
-    </ul>
+  <!-- Work -->
+  <section id="work" class="section work">
+    <h2>Selected Work</h2>
+    <div class="work-grid">
+      <article class="work-card">
+        <div class="work-image-placeholder"></div>
+        <div class="work-info">
+          <h3>Project Name</h3>
+          <span class="work-tag">Branding</span>
+        </div>
+      </article>
+      <article class="work-card">
+        <div class="work-image-placeholder"></div>
+        <div class="work-info">
+          <h3>Project Name</h3>
+          <span class="work-tag">Web Design</span>
+        </div>
+      </article>
+      <article class="work-card">
+        <div class="work-image-placeholder"></div>
+        <div class="work-info">
+          <h3>Project Name</h3>
+          <span class="work-tag">Creative Direction</span>
+        </div>
+      </article>
+      <article class="work-card work-card--wide">
+        <div class="work-image-placeholder"></div>
+        <div class="work-info">
+          <h3>Project Name</h3>
+          <span class="work-tag">Brand Identity</span>
+        </div>
+      </article>
+    </div>
   </section>
 
   <!-- Contact -->
   <section id="contact" class="section contact">
-    <h2>Get in Touch</h2>
-    <p>Interested in working together? Reach out!</p>
-    <form class="contact-form" action="#" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
+    <div class="contact-inner">
+      <h2>Let's create something beautiful</h2>
+      <p>Have a project in mind? We'd love to hear about it.</p>
+      <form class="contact-form" action="#" method="POST">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <input type="text" name="subject" placeholder="Project Type (e.g. Branding, Web Design)">
+        <textarea name="message" rows="5" placeholder="Tell us about your dream project..." required></textarea>
+        <button type="submit" class="btn">Send Inquiry</button>
+      </form>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="social-links">
-      <a href="#" aria-label="GitHub">GitHub</a>
-      <a href="#" aria-label="LinkedIn">LinkedIn</a>
-      <a href="#" aria-label="Twitter">Twitter</a>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">Whisk Studio</a>
+        <p>Design that feels like a dream.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Studio</h4>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#work">Work</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Dribbble">Dribbble</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
     </div>
-    <p>&copy; 2026 Krystal. All rights reserved.</p>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Whisk Studio. All rights reserved.</p>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
