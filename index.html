@@ -3,171 +3,316 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Whisk Studio</title>
+  <title>Buttr Studio — Design Agency</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to content</a>
+  <!-- Skip to content (a11y) -->
+  <a href="#hero" class="skip-link">Skip to content</a>
 
-  <nav class="nav">
-    <a href="#" class="logo">Whisk Studio</a>
-    <div class="nav-right">
-      <a href="#work" class="nav-link">Work</a>
-      <a href="#about" class="nav-link">About</a>
-      <a href="#contact" class="nav-link nav-link--cta">Get in touch</a>
-    </div>
-    <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+  <!-- Grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="#" class="logo">buttr studio</a>
+    <ul class="nav-links">
+      <li><a href="#process">Process</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact" class="nav-cta">Start a Project</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
   </nav>
 
-  <main id="main">
-
-    <!-- Hero: text-only, asymmetric, huge -->
-    <section class="hero">
-      <div class="hero-inner">
-        <h1>
-          <span class="line"><span class="reveal">We craft digital</span></span>
-          <span class="line"><span class="reveal">experiences that</span></span>
-          <span class="line"><span class="reveal thin">feel ethereal.</span></span>
-        </h1>
-        <div class="hero-footer">
-          <p class="hero-desc">Product design, branding &amp; creative direction<br>for brands that refuse to blend in.</p>
-          <a href="#contact" class="btn">Start a project &#8599;</a>
-        </div>
+  <!-- Hero -->
+  <header id="hero" class="hero">
+    <div class="butter-smear butter-smear--1" aria-hidden="true"></div>
+    <div class="butter-smear butter-smear--2" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <span class="hero-badge">Design Agency</span>
+      <div class="hero-title">
+        <div class="word-line"><span class="word-reveal">Design that feels</span></div>
+        <div class="word-line"><span class="word-reveal"><span class="embossed">smooth</span> like butter.</span></div>
       </div>
-    </section>
-
-    <!-- Work: full-width cinematic cards, not a grid -->
-    <section id="work" class="work">
-      <span class="section-label">Selected work</span>
-
-      <a href="#" class="work-item">
-        <div class="work-img">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1200&q=80&auto=format" alt="Fintech app design" loading="lazy">
-        </div>
-        <div class="work-text">
-          <span class="work-num">01</span>
-          <h2>Noma Finance</h2>
-          <p>Product design for a fintech app reimagining how Gen Z saves money.</p>
-          <span class="work-tags">Product Design &mdash; Mobile &mdash; 2025</span>
-        </div>
-      </a>
-
-      <a href="#" class="work-item work-item--reverse">
-        <div class="work-img">
-          <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1200&q=80&auto=format" alt="Beauty brand identity" loading="lazy">
-        </div>
-        <div class="work-text">
-          <span class="work-num">02</span>
-          <h2>Onda Beauty</h2>
-          <p>Full brand identity &amp; packaging for a clean beauty label launching in LA.</p>
-          <span class="work-tags">Branding &mdash; Packaging &mdash; 2024</span>
-        </div>
-      </a>
-
-      <a href="#" class="work-item">
-        <div class="work-img">
-          <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=1200&q=80&auto=format" alt="Motion design system" loading="lazy">
-        </div>
-        <div class="work-text">
-          <span class="work-num">03</span>
-          <h2>Forma Studio</h2>
-          <p>Brand motion system, website, and launch campaign for a creative agency.</p>
-          <span class="work-tags">Motion &mdash; Web &mdash; Branding &mdash; 2025</span>
-        </div>
-      </a>
-    </section>
-
-    <!-- Services: numbered rows, not cards -->
-    <section class="services">
-      <span class="section-label">What we do</span>
-      <div class="services-list">
-        <div class="service-row"><span class="service-num">01</span><span class="service-name">Product Design</span></div>
-        <div class="service-row"><span class="service-num">02</span><span class="service-name">UX Research &amp; Strategy</span></div>
-        <div class="service-row"><span class="service-num">03</span><span class="service-name">UI &amp; Design Systems</span></div>
-        <div class="service-row"><span class="service-num">04</span><span class="service-name">Brand Identity</span></div>
-        <div class="service-row"><span class="service-num">05</span><span class="service-name">Motion &amp; Animation</span></div>
-        <div class="service-row"><span class="service-num">06</span><span class="service-name">Creative Direction</span></div>
-      </div>
-    </section>
-
-    <!-- About: asymmetric two-column -->
-    <section id="about" class="about">
-      <div class="about-inner">
-        <div class="about-left">
-          <span class="section-label">About</span>
-          <h2>Good design starts with a conversation.</h2>
-        </div>
-        <div class="about-right">
-          <p>We're a small, intentional design studio. We partner with startups and brands who care about craft — building products, identities, and experiences that feel considered at every level.</p>
-          <p>No templates. No filler. Just work we're proud of.</p>
-          <div class="about-stats">
-            <div class="stat"><span class="stat-num">50+</span><span class="stat-label">Projects</span></div>
-            <div class="stat"><span class="stat-num">3 yrs</span><span class="stat-label">In the game</span></div>
-            <div class="stat"><span class="stat-num">98%</span><span class="stat-label">Return rate</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonial: single, large -->
-    <section class="quote-section">
-      <blockquote>
-        <p>"They made our product feel like something people actually want to use. Not just functional — genuinely beautiful."</p>
-        <footer>
-          <strong>Alex Rivera</strong>
-          <span>Founder, Terrace</span>
-        </footer>
-      </blockquote>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="contact">
-      <div class="contact-inner">
-        <div class="contact-left">
-          <span class="section-label">Get in touch</span>
-          <h2>Have a project in mind?</h2>
-          <p>We'd love to hear what you're building.</p>
-          <a href="mailto:hello@whiskstudio.com" class="contact-email">hello@whiskstudio.com &#8599;</a>
-        </div>
-        <form class="contact-form" action="#" method="POST">
-          <div class="form-field">
-            <label for="name">01 &mdash; Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required>
-          </div>
-          <div class="form-field">
-            <label for="email">02 &mdash; Email</label>
-            <input type="email" id="email" name="email" placeholder="your@email.com" required>
-          </div>
-          <div class="form-field">
-            <label for="message">03 &mdash; Message</label>
-            <textarea id="message" name="message" rows="4" placeholder="Tell us about your project..." required></textarea>
-          </div>
-          <button type="submit" class="btn">Send message &#8599;</button>
-        </form>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer: cinematic -->
-  <footer class="footer">
-    <div class="footer-top">
-      <img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?w=1920&q=80&auto=format" alt="" loading="lazy">
-      <div class="footer-top-overlay"></div>
-      <div class="footer-top-text">
-        <span class="footer-wordmark">Whisk<br>Studio</span>
+      <p class="hero-sub">We craft product experiences, brands &amp; interfaces with warmth, intention, and care — so your users never want to leave.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn">Start a Project</a>
+        <a href="#work" class="btn btn--outline">View Our Work</a>
       </div>
     </div>
-    <div class="footer-bar">
-      <span>&copy; 2026</span>
-      <div class="footer-links">
-        <a href="#">Instagram</a>
-        <a href="#">Dribbble</a>
-        <a href="#">LinkedIn</a>
+  </header>
+
+  <!-- Social Proof Strip -->
+  <div class="proof-strip">
+    <div class="proof-strip-inner">
+      <div class="proof-item">
+        <span class="proof-num">50+</span>
+        <span class="proof-label">Projects delivered</span>
       </div>
+      <div class="proof-divider"></div>
+      <div class="proof-item">
+        <span class="proof-num">4.9</span>
+        <span class="proof-label">Client satisfaction</span>
+      </div>
+      <div class="proof-divider"></div>
+      <div class="proof-item">
+        <span class="proof-num">12+</span>
+        <span class="proof-label">Industries served</span>
+      </div>
+      <div class="proof-divider"></div>
+      <div class="proof-item">
+        <span class="proof-num">3 yrs</span>
+        <span class="proof-label">In the game</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Process -->
+  <section id="process" class="section process">
+    <div class="section-intro">
+      <span class="section-tag">How We Work</span>
+      <h2>A process built on <span class="handwritten">feeling.</span></h2>
+      <p class="section-desc">Every project follows a clear path — no surprises, no scope creep, just smooth collaboration from start to finish.</p>
+    </div>
+    <div class="process-grid">
+      <div class="process-card" style="--i:0">
+        <span class="process-num">01</span>
+        <h3>Discover</h3>
+        <p>We dig into your brand, users, and goals. Research, interviews, and audits that set the foundation for everything.</p>
+      </div>
+      <div class="process-card" style="--i:1">
+        <span class="process-num">02</span>
+        <h3>Define</h3>
+        <p>Strategy meets creativity. We map out the experience, define the visual direction, and align on what success looks like.</p>
+      </div>
+      <div class="process-card" style="--i:2">
+        <span class="process-num">03</span>
+        <h3>Design</h3>
+        <p>Wireframes, hi-fi mockups, prototypes, motion. Every pixel is placed with intention, every interaction rehearsed.</p>
+      </div>
+      <div class="process-card" style="--i:3">
+        <span class="process-num">04</span>
+        <h3>Deliver</h3>
+        <p>Polished assets, design systems, and developer handoff. We stick around to make sure everything ships beautifully.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metrics -->
+  <section class="section metrics">
+    <div class="metrics-grid">
+      <div class="metric">
+        <span class="metric-num">98%</span>
+        <span class="metric-label">of clients come back for round two</span>
+      </div>
+      <div class="metric">
+        <span class="metric-num">2 weeks</span>
+        <span class="metric-label">average turnaround for brand identities</span>
+      </div>
+      <div class="metric">
+        <span class="metric-num">0</span>
+        <span class="metric-label">templates used — everything is custom</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Selected Work -->
+  <section id="work" class="section work">
+    <div class="section-intro">
+      <span class="section-tag">Selected Work</span>
+      <h2>Things we've made <span class="handwritten">with love.</span></h2>
+    </div>
+    <div class="work-grid">
+      <article class="work-card" style="--i:0">
+        <div class="work-image">
+          <div class="work-image-placeholder"></div>
+        </div>
+        <div class="work-meta">
+          <span class="work-tag">Product Design</span>
+          <h3>Project Name</h3>
+          <p>End-to-end mobile app design for a fintech startup.</p>
+        </div>
+      </article>
+      <article class="work-card" style="--i:1">
+        <div class="work-image">
+          <div class="work-image-placeholder work-image-placeholder--alt"></div>
+        </div>
+        <div class="work-meta">
+          <span class="work-tag">Brand Identity</span>
+          <h3>Project Name</h3>
+          <p>Full rebrand for an indie beauty label.</p>
+        </div>
+      </article>
+      <article class="work-card" style="--i:2">
+        <div class="work-image">
+          <div class="work-image-placeholder work-image-placeholder--alt2"></div>
+        </div>
+        <div class="work-meta">
+          <span class="work-tag">UX / UI</span>
+          <h3>Project Name</h3>
+          <p>Dashboard redesign for a SaaS analytics platform.</p>
+        </div>
+      </article>
+      <article class="work-card" style="--i:3">
+        <div class="work-image">
+          <div class="work-image-placeholder work-image-placeholder--wide"></div>
+        </div>
+        <div class="work-meta">
+          <span class="work-tag">Motion &amp; Branding</span>
+          <h3>Project Name</h3>
+          <p>Brand motion system for a creative studio launch.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Testimonial -->
+  <section class="section testimonial">
+    <div class="testimonial-card">
+      <svg class="testimonial-quote" width="40" height="32" viewBox="0 0 40 32" fill="none" aria-hidden="true">
+        <path d="M0 20.8C0 27.2 4.48 32 10.24 32c4.48 0 8.32-3.52 8.32-8s-3.2-7.68-7.04-7.68c-.64 0-1.6.16-2.08.32C10.24 10.56 14.4 5.44 18.56 3.2L15.68 0C6.72 4.16 0 12.48 0 20.8zm21.44 0C21.44 27.2 25.92 32 31.68 32 36.16 32 40 28.48 40 24s-3.2-7.68-7.04-7.68c-.64 0-1.6.16-2.08.32.8-6.08 4.96-11.2 9.12-13.44L37.12 0c-8.96 4.16-15.68 12.48-15.68 20.8z" fill="var(--butter)"/>
+      </svg>
+      <blockquote>"They didn't just make it look good — they made it feel right. Every interaction, every detail. Working with Buttr was the best decision we made for our product."</blockquote>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar"></div>
+        <div>
+          <span class="testimonial-name">Alex Rivera</span>
+          <span class="testimonial-role">Founder, Terrace</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section services">
+    <div class="section-intro">
+      <span class="section-tag">Services</span>
+      <h2>What we bring to <span class="handwritten">the table.</span></h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card" style="--i:0">
+        <div class="service-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+        </div>
+        <h3>Product Design</h3>
+        <p>Research to production — end-to-end product thinking for apps, platforms, and tools.</p>
+      </div>
+      <div class="service-card" style="--i:1">
+        <div class="service-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+        </div>
+        <h3>UX Research</h3>
+        <p>User interviews, journey maps, and data-informed decisions that solve real problems.</p>
+      </div>
+      <div class="service-card" style="--i:2">
+        <div class="service-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><rect x="4" y="8" width="16" height="8" rx="1"/></svg>
+        </div>
+        <h3>UI &amp; Design Systems</h3>
+        <p>Pixel-perfect interfaces and scalable systems that keep your product consistent.</p>
+      </div>
+      <div class="service-card" style="--i:3">
+        <div class="service-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>Brand Identity</h3>
+        <p>Logos, color systems, typography, and guidelines that capture your essence.</p>
+      </div>
+      <div class="service-card" style="--i:4">
+        <div class="service-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <h3>Motion &amp; Animation</h3>
+        <p>Micro-interactions, transitions, and visuals that bring your product to life.</p>
+      </div>
+      <div class="service-card" style="--i:5">
+        <div class="service-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+        </div>
+        <h3>Creative Direction</h3>
+        <p>Visual strategy and art direction to keep your brand cohesive everywhere.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section faq">
+    <div class="section-intro">
+      <span class="section-tag">FAQ</span>
+      <h2>Common questions, <span class="handwritten">answered.</span></h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>What does a typical project look like?</summary>
+        <p>Most projects run 4–8 weeks depending on scope. We start with discovery, move into design, and deliver polished, production-ready assets with full handoff documentation.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How much does a project cost?</summary>
+        <p>Projects typically range from $5K–$25K depending on complexity. We'll scope everything transparently before any work begins — no surprises.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you work with startups?</summary>
+        <p>Absolutely. A good chunk of our work is with early-stage startups who need to look and feel like a bigger company. We love helping brands punch above their weight.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can you handle development too?</summary>
+        <p>We focus on design, but we work closely with trusted dev partners and can manage the full handoff. Your engineers will love our deliverables.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What if I'm not sure what I need?</summary>
+        <p>That's totally fine. Book a call and we'll figure it out together. Sometimes the best projects start with "I'm not sure yet."</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section id="contact" class="section cta-section">
+    <div class="cta-card">
+      <h2>Ready to make something <span class="handwritten">beautiful?</span></h2>
+      <p>Tell us about your project. We'll get back to you within 24 hours.</p>
+      <form class="cta-form" action="#" method="POST">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+        <input type="text" name="subject" placeholder="What do you need? (e.g. Product Design, Branding)">
+        <textarea name="message" rows="4" placeholder="Tell us about your project..." required></textarea>
+        <button type="submit" class="btn btn--full">Send Inquiry</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">buttr studio</a>
+        <p>Design that melts into place.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <span class="footer-heading">Studio</span>
+          <a href="#process">Process</a>
+          <a href="#work">Work</a>
+          <a href="#services">Services</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-heading">Connect</span>
+          <a href="#">Instagram</a>
+          <a href="#">Dribbble</a>
+          <a href="#">LinkedIn</a>
+          <a href="mailto:hello@buttrstudio.com">Email</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Buttr Studio. All rights reserved.</p>
     </div>
   </footer>
 
