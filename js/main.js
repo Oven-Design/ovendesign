@@ -15,7 +15,7 @@ const navbar = document.querySelector('.navbar');
 
 window.addEventListener('scroll', () => {
   navbar.style.borderBottomColor = window.scrollY > 50
-    ? 'rgba(26, 18, 7, 0.08)'
+    ? 'rgba(0, 0, 0, 0.06)'
     : 'transparent';
 }, { passive: true });
 
@@ -25,20 +25,18 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 // Reveal on scroll
-const revealEls = document.querySelectorAll(
-  '.process-card, .work-card, .service-card'
-);
+const revealEls = document.querySelectorAll('.work-card, .service');
 
-const revealObserver = new IntersectionObserver(
+const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add('revealed');
-        revealObserver.unobserve(entry.target);
+        observer.unobserve(entry.target);
       }
     });
   },
   { threshold: 0.12, rootMargin: '0px 0px -30px 0px' }
 );
 
-revealEls.forEach((el) => revealObserver.observe(el));
+revealEls.forEach((el) => observer.observe(el));
