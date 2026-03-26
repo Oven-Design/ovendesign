@@ -6,10 +6,13 @@
   <title>Whisk Studio — Design Agency</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <!-- Grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
   <!-- Navigation -->
   <nav class="navbar">
     <a href="#" class="logo">whisk studio</a>
@@ -25,13 +28,38 @@
   <!-- Hero -->
   <header id="hero" class="hero">
     <div class="hero-content">
-      <h1>We design brands that<br>people <span class="handwritten">actually</span> remember.</h1>
-      <p class="hero-sub">Branding, web &amp; creative direction for the bold and the intentional.</p>
+      <h1>
+        We design products<br>
+        people
+        <span class="doodle-circle-wrap">
+          <span class="handwritten">actually</span>
+          <!-- Hand-drawn circle SVG -->
+          <svg class="doodle-circle" viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <ellipse cx="100" cy="40" rx="92" ry="34" stroke="var(--yellow)" stroke-width="2.5" stroke-linecap="round" pathLength="1" style="stroke-dasharray:1;stroke-dashoffset:1"/>
+          </svg>
+        </span>
+        remember.
+      </h1>
+      <p class="hero-sub">Product design, UX/UI, branding &amp; motion — for the bold and the intentional.</p>
       <div class="hero-actions">
         <a href="#work" class="btn">View Work</a>
         <a href="#contact" class="btn btn--outline">Start a Project</a>
       </div>
+      <!-- Hand-drawn arrow pointing to CTA -->
+      <svg class="hero-arrow" width="80" height="60" viewBox="0 0 80 60" fill="none" aria-hidden="true">
+        <path d="M5 50 C20 45, 35 20, 70 12" stroke="var(--yellow)" stroke-width="2" stroke-linecap="round" fill="none" pathLength="1" style="stroke-dasharray:1;stroke-dashoffset:1"/>
+        <path d="M60 5 L70 12 L58 18" stroke="var(--yellow)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" pathLength="1" style="stroke-dasharray:1;stroke-dashoffset:1"/>
+      </svg>
     </div>
+
+    <!-- Sticky note in hero -->
+    <div class="sticky-note sticky-note--hero" aria-hidden="true">
+      <span class="sticky-text">make it<br><strong>memorable</strong></span>
+      <svg class="doodle-star" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M10 2 L12 8 L18 8 L13 12 L15 18 L10 14 L5 18 L7 12 L2 8 L8 8Z" stroke="var(--black)" stroke-width="1.5" fill="none"/>
+      </svg>
+    </div>
+
     <div class="hero-scroll-hint">
       <span>Scroll</span>
       <div class="scroll-line"></div>
@@ -41,31 +69,35 @@
   <!-- Marquee -->
   <div class="marquee" aria-hidden="true">
     <div class="marquee__content">
+      <span>Product Design</span>
+      <span class="marquee-dot"></span>
+      <span>UX Research</span>
+      <span class="marquee-dot"></span>
+      <span>UI Design</span>
+      <span class="marquee-dot"></span>
       <span>Branding</span>
       <span class="marquee-dot"></span>
-      <span>Web Design</span>
+      <span>Motion Design</span>
       <span class="marquee-dot"></span>
-      <span>Creative Direction</span>
+      <span>Design Systems</span>
       <span class="marquee-dot"></span>
-      <span>Typography</span>
-      <span class="marquee-dot"></span>
-      <span>Art Direction</span>
-      <span class="marquee-dot"></span>
-      <span>Packaging</span>
+      <span>Prototyping</span>
       <span class="marquee-dot"></span>
     </div>
     <div class="marquee__content">
+      <span>Product Design</span>
+      <span class="marquee-dot"></span>
+      <span>UX Research</span>
+      <span class="marquee-dot"></span>
+      <span>UI Design</span>
+      <span class="marquee-dot"></span>
       <span>Branding</span>
       <span class="marquee-dot"></span>
-      <span>Web Design</span>
+      <span>Motion Design</span>
       <span class="marquee-dot"></span>
-      <span>Creative Direction</span>
+      <span>Design Systems</span>
       <span class="marquee-dot"></span>
-      <span>Typography</span>
-      <span class="marquee-dot"></span>
-      <span>Art Direction</span>
-      <span class="marquee-dot"></span>
-      <span>Packaging</span>
+      <span>Prototyping</span>
       <span class="marquee-dot"></span>
     </div>
   </div>
@@ -79,48 +111,76 @@
     <div class="work-grid">
       <article class="work-card work-card--large" style="--i:0">
         <div class="work-image">
-          <div class="work-image-placeholder"></div>
+          <div class="work-image-placeholder">
+            <!-- Doodle overlay on placeholder -->
+            <svg class="doodle-overlay" viewBox="0 0 400 300" fill="none" aria-hidden="true">
+              <rect x="40" y="40" width="120" height="80" rx="4" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" stroke-dasharray="6 4"/>
+              <circle cx="280" cy="180" r="40" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+              <line x1="180" y1="220" x2="320" y2="220" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+            </svg>
+          </div>
         </div>
         <div class="work-meta">
-          <span class="work-category">Branding</span>
+          <span class="work-category">Product Design</span>
           <h3>Project Name</h3>
         </div>
       </article>
       <article class="work-card" style="--i:1">
         <div class="work-image">
-          <div class="work-image-placeholder"></div>
-        </div>
-        <div class="work-meta">
-          <span class="work-category">Web Design</span>
-          <h3>Project Name</h3>
-        </div>
-      </article>
-      <article class="work-card" style="--i:2">
-        <div class="work-image">
-          <div class="work-image-placeholder"></div>
-        </div>
-        <div class="work-meta">
-          <span class="work-category">Creative Direction</span>
-          <h3>Project Name</h3>
-        </div>
-      </article>
-      <article class="work-card work-card--large" style="--i:3">
-        <div class="work-image">
-          <div class="work-image-placeholder"></div>
+          <div class="work-image-placeholder work-image-placeholder--alt"></div>
         </div>
         <div class="work-meta">
           <span class="work-category">Brand Identity</span>
           <h3>Project Name</h3>
         </div>
       </article>
+      <article class="work-card" style="--i:2">
+        <div class="work-image">
+          <div class="work-image-placeholder work-image-placeholder--alt2"></div>
+        </div>
+        <div class="work-meta">
+          <span class="work-category">UX / UI</span>
+          <h3>Project Name</h3>
+        </div>
+      </article>
+      <article class="work-card work-card--full" style="--i:3">
+        <div class="work-image">
+          <div class="work-image-placeholder work-image-placeholder--wide"></div>
+        </div>
+        <div class="work-meta">
+          <span class="work-category">Motion &amp; Branding</span>
+          <h3>Project Name</h3>
+        </div>
+      </article>
     </div>
   </section>
 
-  <!-- Philosophy -->
+  <!-- Philosophy / Venn diagram section -->
   <section class="section philosophy">
-    <blockquote>
-      Art is seeing <span class="handwritten">the same things</span> from another point of view.
-    </blockquote>
+    <div class="philosophy-grid">
+      <div class="venn-diagram" aria-hidden="true">
+        <svg viewBox="0 0 340 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="130" cy="130" r="100" stroke="var(--gray-300)" stroke-width="1.5" fill="none"/>
+          <circle cx="210" cy="130" r="100" stroke="var(--gray-300)" stroke-width="1.5" fill="none"/>
+          <text x="75" y="135" fill="var(--gray-500)" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="400">things</text>
+          <text x="233" y="125" fill="var(--gray-500)" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="400">same things</text>
+          <text x="233" y="143" fill="var(--gray-500)" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="300">from another</text>
+          <text x="233" y="159" fill="var(--gray-500)" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="300">point of view</text>
+          <text x="144" y="125" fill="var(--yellow)" font-family="'Caveat', cursive" font-size="28" font-weight="600" text-anchor="middle">design</text>
+        </svg>
+      </div>
+      <blockquote>
+        Design isn't just how it
+        <span class="doodle-underline-wrap">
+          looks
+          <svg class="doodle-underline" viewBox="0 0 120 12" fill="none" aria-hidden="true">
+            <path d="M2 8 C30 2, 60 12, 118 4" stroke="var(--yellow)" stroke-width="2.5" stroke-linecap="round" pathLength="1" style="stroke-dasharray:1;stroke-dashoffset:1"/>
+          </svg>
+        </span>
+        — it's how it
+        <span class="handwritten">feels.</span>
+      </blockquote>
+    </div>
   </section>
 
   <!-- About -->
@@ -133,14 +193,29 @@
       <div class="about-content">
         <h2>A small studio with<br><span class="handwritten">big ideas.</span></h2>
         <p>
-          We're a design studio that believes every brand has a story worth telling
-          beautifully. We merge strategy with artistry — building identities that
-          are as intentional as they are memorable.
+          We're a product design studio that believes every interface, every brand,
+          every interaction has a story worth telling beautifully. We merge strategy
+          with artistry — building experiences that are as intentional as they are
+          memorable.
         </p>
         <p>
           No templates. No trends for trends' sake. Just thoughtful design
           that works.
         </p>
+      </div>
+      <!-- Sticky notes cluster -->
+      <div class="sticky-cluster" aria-hidden="true">
+        <div class="sticky-note sticky-note--sm sticky-note--tilt-left">
+          <span class="sticky-text">user first<br>always</span>
+        </div>
+        <div class="sticky-note sticky-note--sm sticky-note--tilt-right">
+          <span class="sticky-text">
+            <svg class="doodle-star-sm" width="16" height="16" viewBox="0 0 20 20" fill="none">
+              <path d="M10 2 L12 8 L18 8 L13 12 L15 18 L10 14 L5 18 L7 12 L2 8 L8 8Z" stroke="var(--black)" stroke-width="1.5" fill="none"/>
+            </svg>
+            do you have<br>oat milk?
+          </span>
+        </div>
       </div>
     </div>
   </section>
@@ -154,24 +229,37 @@
     <div class="services-list">
       <div class="service-row" style="--i:0">
         <span class="service-num">01</span>
-        <h3>Brand Identity</h3>
-        <p>Strategy, logos, color systems, typography, and guidelines.</p>
+        <h3>Product Design</h3>
+        <p>End-to-end product thinking — from research and wireframes to polished, production-ready interfaces.</p>
       </div>
       <div class="service-row" style="--i:1">
         <span class="service-num">02</span>
-        <h3>Web Design &amp; Development</h3>
-        <p>Responsive, beautiful sites that feel like an extension of your brand.</p>
+        <h3>UX Research &amp; Strategy</h3>
+        <p>User interviews, journey mapping, and data-informed design decisions that solve real problems.</p>
       </div>
       <div class="service-row" style="--i:2">
         <span class="service-num">03</span>
-        <h3>Creative Direction</h3>
-        <p>Visual strategy that keeps your brand cohesive everywhere it lives.</p>
+        <h3>UI Design &amp; Systems</h3>
+        <p>Pixel-perfect interfaces and scalable design systems that keep your product consistent as it grows.</p>
       </div>
       <div class="service-row" style="--i:3">
         <span class="service-num">04</span>
-        <h3>Print &amp; Packaging</h3>
-        <p>Tangible design — cards, packaging, merch — that people want to hold onto.</p>
+        <h3>Brand Identity</h3>
+        <p>Logos, color systems, typography, and guidelines that capture your essence and stand out.</p>
       </div>
+      <div class="service-row" style="--i:4">
+        <span class="service-num">05</span>
+        <h3>Motion &amp; Animation</h3>
+        <p>Micro-interactions, transitions, and animated visuals that bring interfaces and brands to life.</p>
+      </div>
+    </div>
+    <!-- Hand-drawn arrow from services to contact -->
+    <div class="services-cta">
+      <span class="handwritten">sound good?</span>
+      <svg class="doodle-arrow-down" width="30" height="50" viewBox="0 0 30 50" fill="none" aria-hidden="true">
+        <path d="M15 2 C15 15, 15 30, 15 42" stroke="var(--yellow)" stroke-width="2" stroke-linecap="round" pathLength="1" style="stroke-dasharray:1;stroke-dashoffset:1"/>
+        <path d="M8 35 L15 44 L22 35" stroke="var(--yellow)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" pathLength="1" style="stroke-dasharray:1;stroke-dashoffset:1"/>
+      </svg>
     </div>
   </section>
 
@@ -179,17 +267,21 @@
   <section id="contact" class="section contact">
     <div class="contact-grid">
       <div class="contact-text">
-        <h2>Have a project<br>in mind<span class="handwritten">?</span></h2>
+        <h2>Have a project<br>in mind<span class="handwritten" style="font-size:1.4em;color:var(--yellow)">?</span></h2>
         <p>We'd love to hear about it. Tell us what you're building and we'll figure out how to make it beautiful.</p>
         <a href="mailto:hello@whiskstudio.com" class="contact-email">hello@whiskstudio.com</a>
       </div>
       <form class="contact-form" action="#" method="POST">
         <input type="text" name="name" placeholder="Name" required>
         <input type="email" name="email" placeholder="Email" required>
-        <input type="text" name="subject" placeholder="Project type">
+        <input type="text" name="subject" placeholder="Project type (e.g. Product Design, Branding)">
         <textarea name="message" rows="4" placeholder="Tell us about your project..." required></textarea>
         <button type="submit" class="btn">Send Inquiry</button>
       </form>
+    </div>
+    <!-- Sticky note in contact -->
+    <div class="sticky-note sticky-note--contact" aria-hidden="true">
+      <span class="sticky-text">let's make<br>something<br><strong>cool</strong> &#x2728;</span>
     </div>
   </section>
 
