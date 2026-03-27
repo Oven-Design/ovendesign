@@ -26,7 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // Reveal on scroll
 const revealEls = document.querySelectorAll(
-  '.process-card, .work-card, .service-card'
+  '.process-card, .work-card, .service-card, .section-intro, .philosophy-quote, .philosophy-sub'
 );
 
 const revealObserver = new IntersectionObserver(
