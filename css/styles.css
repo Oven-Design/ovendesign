@@ -330,52 +330,6 @@ body.loaded .hero-actions { opacity: 1; transform: translateY(0); }
   background: var(--warm-200);
 }
 
-/* ===== Philosophy ===== */
-.philosophy {
-  text-align: center;
-  padding: 5rem 2rem 4rem;
-}
-
-.philosophy-quote {
-  font-family: var(--font-heading);
-  font-size: clamp(1.5rem, 3vw, 2.25rem);
-  font-weight: 300;
-  font-style: italic;
-  line-height: 1.5;
-  color: var(--espresso);
-  max-width: 680px;
-  margin: 0 auto 1.5rem;
-}
-
-.philosophy-quote .handwritten {
-  font-style: normal;
-  font-size: 1.1em;
-}
-
-.philosophy-quote,
-.philosophy-sub {
-  opacity: 0; transform: translateY(20px);
-  transition: opacity 0.7s ease, transform 0.7s var(--ease-out-expo);
-}
-
-.philosophy-quote.revealed,
-.philosophy-sub.revealed {
-  opacity: 1; transform: translateY(0);
-}
-
-.philosophy-sub.revealed {
-  transition-delay: 0.15s;
-}
-
-.philosophy-sub {
-  font-size: 1.05rem;
-  font-weight: 300;
-  color: var(--warm-500);
-  max-width: 480px;
-  margin: 0 auto;
-  line-height: 1.7;
-}
-
 /* ===== Sections ===== */
 .section {
   max-width: var(--max-width);
@@ -386,12 +340,6 @@ body.loaded .hero-actions { opacity: 1; transform: translateY(0); }
 .section-intro {
   text-align: center;
   margin-bottom: 3.5rem;
-  opacity: 0; transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s var(--ease-out-expo);
-}
-
-.section-intro.revealed {
-  opacity: 1; transform: translateY(0);
 }
 
 .section-tag {
@@ -414,6 +362,37 @@ body.loaded .hero-actions { opacity: 1; transform: translateY(0); }
   font-size: 1.05rem; font-weight: 300;
   color: var(--warm-500); max-width: 520px;
   margin: 0 auto; line-height: 1.7;
+}
+
+/* ===== Philosophy ===== */
+.philosophy {
+  text-align: center;
+  padding: 5rem 2rem 4rem;
+}
+
+.philosophy-quote {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--espresso);
+  max-width: 680px;
+  margin: 0 auto 1.5rem;
+}
+
+.philosophy-quote .handwritten {
+  font-style: normal;
+  font-size: 1.1em;
+}
+
+.philosophy-sub {
+  font-size: 1.05rem;
+  font-weight: 300;
+  color: var(--warm-500);
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.7;
 }
 
 /* ===== Process ===== */
@@ -684,20 +663,6 @@ body.loaded .hero-actions { opacity: 1; transform: translateY(0); }
   color: var(--espresso);
 }
 
-.faq-item .faq-content {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.35s ease;
-}
-
-.faq-item[open] .faq-content {
-  grid-template-rows: 1fr;
-}
-
-.faq-content > p {
-  overflow: hidden;
-}
-
 .faq-item p {
   padding: 0 0 1.25rem;
   font-size: 1rem; font-weight: 300;
@@ -926,13 +891,8 @@ body.loaded .hero-actions { opacity: 1; transform: translateY(0); }
 
   .word-reveal { transform: none; transition: none; }
 
-  .process-card, .work-card, .service-card,
-  .section-intro, .philosophy-quote, .philosophy-sub {
+  .process-card, .work-card, .service-card {
     opacity: 1; transform: none;
     transition: border-color 0.3s ease;
-  }
-
-  .faq-item .faq-content {
-    transition: none;
   }
 }
