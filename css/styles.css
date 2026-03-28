@@ -27,7 +27,6 @@
   --font-body: 'Space Grotesk', -apple-system, sans-serif;
   --font-heading: 'Fraunces', Georgia, serif;
   --font-pixel: 'Silkscreen', cursive;
-  --font-hand: 'Caveat', cursive;
   --max-width: 1100px;
   --transition: 0.3s ease;
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
@@ -103,10 +102,10 @@ summary:focus-visible {
 
 /* ===== Utilities ===== */
 .handwritten {
-  font-family: var(--font-hand);
-  font-size: 1.15em;
-  color: var(--maroon);
+  font-family: var(--font-heading);
+  font-style: italic;
   font-weight: 600;
+  color: var(--maroon);
 }
 
 /* ===== Navbar ===== */
@@ -383,8 +382,7 @@ body.loaded .hero-actions { opacity: 1; transform: translateY(0); }
 }
 
 .philosophy-quote .handwritten {
-  font-style: normal;
-  font-size: 1.1em;
+  font-style: italic;
 }
 
 .philosophy-sub {
