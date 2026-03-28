@@ -24,8 +24,8 @@
   --warm-300: #B8A68A;
   --warm-500: #6B5744;
   --warm-700: #4A3228;
-  --font-body: 'Space Grotesk', -apple-system, sans-serif;
-  --font-heading: 'Fraunces', Georgia, serif;
+  --font-body: 'DM Sans', -apple-system, sans-serif;
+  --font-heading: 'DM Serif Display', Georgia, serif;
   --font-pixel: 'Silkscreen', cursive;
   --max-width: 1100px;
   --transition: 0.3s ease;
@@ -104,7 +104,6 @@ summary:focus-visible {
 .handwritten {
   font-family: var(--font-heading);
   font-style: italic;
-  font-weight: 600;
   color: var(--maroon);
 }
 
@@ -242,7 +241,6 @@ body.loaded .word-reveal { transform: translateY(0); }
 .embossed {
   color: var(--maroon);
   font-style: italic;
-  font-weight: 600;
 }
 
 .hero-sub {
@@ -373,16 +371,11 @@ body.loaded .hero-actions { opacity: 1; transform: translateY(0); }
 .philosophy-quote {
   font-family: var(--font-heading);
   font-size: clamp(1.5rem, 3vw, 2.25rem);
-  font-weight: 300;
   font-style: italic;
   line-height: 1.5;
   color: var(--espresso);
   max-width: 680px;
   margin: 0 auto 1.5rem;
-}
-
-.philosophy-quote .handwritten {
-  font-style: italic;
 }
 
 .philosophy-sub {
