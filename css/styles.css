@@ -276,7 +276,8 @@ body.loaded .hero-actions { opacity: 1; transform: translateY(0); }
   font-family: var(--font-body);
   font-weight: 500; font-size: 0.95rem;
   letter-spacing: 0.01em;
-   transition: all var(--transition);
+  cursor: pointer;
+  transition: all var(--transition);
 }
 
 .btn:hover {
@@ -638,6 +639,7 @@ body.loaded .hero-actions { opacity: 1; transform: translateY(0); }
 .faq-item summary {
   padding: 1.25rem 0;
   font-size: 1.1rem; font-weight: 500;
+  cursor: pointer;
   list-style: none;
   display: flex; justify-content: space-between;
   align-items: center;
@@ -713,6 +715,7 @@ body.loaded .hero-actions { opacity: 1; transform: translateY(0); }
 
 .cta-form input,
 .cta-form textarea {
+  width: 100%;
   padding: 0.85rem 1rem;
   border: 1px solid var(--warm-700);
   border-radius: 8px;
