@@ -12,11 +12,14 @@ navLinks.querySelectorAll('a').forEach(link => {
 
 // Navbar border on scroll
 const navbar = document.querySelector('.navbar');
+let isScrolled = false;
 
 window.addEventListener('scroll', () => {
-  navbar.style.borderBottomColor = window.scrollY > 50
-    ? 'rgba(26, 18, 7, 0.08)'
-    : 'transparent';
+  const shouldBeScrolled = window.scrollY > 50;
+  if (shouldBeScrolled !== isScrolled) {
+    isScrolled = shouldBeScrolled;
+    navbar.classList.toggle('scrolled', isScrolled);
+  }
 }, { passive: true });
 
 // Page load
