@@ -10,250 +10,122 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <!-- Skip to content (a11y) -->
   <a href="#hero" class="skip-link">Skip to content</a>
-
-  <!-- Grain overlay -->
-  <div class="grain" aria-hidden="true"></div>
 
   <!-- Navigation -->
   <nav class="navbar">
     <a href="#" class="logo">oven design</a>
-    <ul class="nav-links">
-      <li><a href="#process">Process</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#contact" class="nav-cta">Start a Project</a></li>
-    </ul>
+    <div class="nav-pill">
+      <a href="#work">Work</a>
+      <span class="nav-dot">&middot;</span>
+      <a href="#approach">Studio</a>
+      <span class="nav-dot">&middot;</span>
+      <a href="#faq">FAQ</a>
+    </div>
+    <a href="#contact" class="nav-cta">Contact</a>
     <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
   </nav>
 
-  <!-- Hero -->
-  <header id="hero" class="hero">
-    <div class="hero-glow hero-glow--1" aria-hidden="true"></div>
-    <div class="hero-glow hero-glow--2" aria-hidden="true"></div>
-    <div class="hero-inner">
-      <span class="hero-badge">Design Studio</span>
-      <h1 class="hero-title">
-        <span class="word-line"><span class="word-reveal">Design that's</span></span>
-        <span class="word-line"><span class="word-reveal"><span class="embossed">baked</span> to perfection.</span></span>
-      </h1>
-      <p class="hero-sub">We craft product experiences, brands &amp; interfaces with warmth, intention, and care — fresh out the oven, every time.</p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn">Start a Project</a>
-        <a href="#work" class="btn btn--outline">View Our Work</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- Social Proof Strip -->
-  <div class="proof-strip">
-    <div class="proof-strip-inner">
-      <div class="proof-item">
-        <span class="proof-num">50+</span>
-        <span class="proof-label">Projects delivered</span>
-      </div>
-      <div class="proof-divider"></div>
-      <div class="proof-item">
-        <span class="proof-num">4.9</span>
-        <span class="proof-label">Client satisfaction</span>
-      </div>
-      <div class="proof-divider"></div>
-      <div class="proof-item">
-        <span class="proof-num">12+</span>
-        <span class="proof-label">Industries served</span>
-      </div>
-      <div class="proof-divider"></div>
-      <div class="proof-item">
-        <span class="proof-num">3 yrs</span>
-        <span class="proof-label">In the game</span>
-      </div>
-    </div>
+  <!-- Mobile nav -->
+  <div class="nav-mobile">
+    <a href="#work">Work</a>
+    <a href="#approach">Studio</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
   </div>
 
-  <!-- Philosophy -->
-  <section class="section philosophy">
-    <blockquote class="philosophy-quote">
-      "Good design, like good bread, takes <span class="handwritten">time,</span> <span class="handwritten">heat,</span> and the right <span class="handwritten">ingredients.</span>"
-    </blockquote>
-    <p class="philosophy-sub">We're a small studio that believes in the slow craft of design — no shortcuts, no half-baked work. Just honest, thoughtful making.</p>
-  </section>
+  <!-- Hero Statement -->
+  <header id="hero" class="section hero">
+    <h1 class="hero-statement">We craft brands and digital experiences with warmth and precision — baked to perfection, designed to leave a lasting impression.</h1>
+  </header>
 
-  <!-- Process -->
-  <section id="process" class="section process">
-    <div class="section-intro">
-      <span class="section-tag">How We Work</span>
-      <h2>A process built on <span class="handwritten">warmth.</span></h2>
-      <p class="section-desc">Every project follows a clear recipe — no surprises, no scope creep, just thoughtful craft from first sketch to final pixel.</p>
+  <!-- Featured Work -->
+  <section id="work" class="section">
+    <div class="section-header">
+      <span class="section-label">Featured Work</span>
+      <a href="#work" class="arrow-link">View All <span>&rarr;</span></a>
     </div>
-    <div class="process-grid">
-      <div class="process-card" style="--i:0">
-        <span class="process-num">01</span>
-        <h3>Discover</h3>
-        <p>We dig into your brand, users, and goals. Research, interviews, and audits that set the foundation for everything.</p>
-      </div>
-      <div class="process-card" style="--i:1">
-        <span class="process-num">02</span>
-        <h3>Define</h3>
-        <p>Strategy meets creativity. We map out the experience, define the visual direction, and align on what success looks like.</p>
-      </div>
-      <div class="process-card" style="--i:2">
-        <span class="process-num">03</span>
-        <h3>Design</h3>
-        <p>Wireframes, hi-fi mockups, prototypes, motion. Every pixel is placed with intention, every interaction rehearsed.</p>
-      </div>
-      <div class="process-card" style="--i:3">
-        <span class="process-num">04</span>
-        <h3>Deliver</h3>
-        <p>Polished assets, design systems, and developer handoff. We stick around to make sure everything ships beautifully.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Metrics -->
-  <section class="section metrics">
-    <div class="metrics-grid">
-      <div class="metric">
-        <span class="metric-num">98%</span>
-        <span class="metric-label">of clients come back for round two</span>
-      </div>
-      <div class="metric">
-        <span class="metric-num">2 weeks</span>
-        <span class="metric-label">average turnaround for brand identities</span>
-      </div>
-      <div class="metric">
-        <span class="metric-num">0</span>
-        <span class="metric-label">templates used — everything is custom</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Selected Work -->
-  <section id="work" class="section work">
-    <div class="section-intro">
-      <span class="section-tag">Selected Work</span>
-      <h2>Things we've cooked up <span class="handwritten">with love.</span></h2>
-    </div>
+    <div class="divider"></div>
     <div class="work-grid">
-      <article class="work-card" style="--i:0">
-        <div class="work-image">
-          <div class="work-image-placeholder"></div>
-        </div>
-        <div class="work-meta">
-          <span class="work-tag">Product Design</span>
-          <h3>Project Name</h3>
-          <p>End-to-end mobile app design for a fintech startup.</p>
-        </div>
+      <article class="work-card">
+        <div class="work-image"></div>
+        <h3 class="work-title">Project Name</h3>
+        <p class="work-meta">Product Design</p>
       </article>
-      <article class="work-card" style="--i:1">
-        <div class="work-image">
-          <div class="work-image-placeholder work-image-placeholder--alt"></div>
-        </div>
-        <div class="work-meta">
-          <span class="work-tag">Brand Identity</span>
-          <h3>Project Name</h3>
-          <p>Full rebrand for an indie beauty label.</p>
-        </div>
+      <article class="work-card">
+        <div class="work-image work-image--alt"></div>
+        <h3 class="work-title">Project Name</h3>
+        <p class="work-meta">Brand Identity</p>
       </article>
-      <article class="work-card" style="--i:2">
-        <div class="work-image">
-          <div class="work-image-placeholder work-image-placeholder--alt2"></div>
-        </div>
-        <div class="work-meta">
-          <span class="work-tag">UX / UI</span>
-          <h3>Project Name</h3>
-          <p>Dashboard redesign for a SaaS analytics platform.</p>
-        </div>
-      </article>
-      <article class="work-card" style="--i:3">
-        <div class="work-image">
-          <div class="work-image-placeholder work-image-placeholder--wide"></div>
-        </div>
-        <div class="work-meta">
-          <span class="work-tag">Motion &amp; Branding</span>
-          <h3>Project Name</h3>
-          <p>Brand motion system for a creative studio launch.</p>
-        </div>
+      <article class="work-card">
+        <div class="work-image work-image--alt2"></div>
+        <h3 class="work-title">Project Name</h3>
+        <p class="work-meta">UX / UI</p>
       </article>
     </div>
   </section>
 
-  <!-- Testimonial -->
-  <section class="section testimonial">
-    <div class="testimonial-card">
-      <svg class="testimonial-quote" width="40" height="32" viewBox="0 0 40 32" fill="none" aria-hidden="true">
-        <path d="M0 20.8C0 27.2 4.48 32 10.24 32c4.48 0 8.32-3.52 8.32-8s-3.2-7.68-7.04-7.68c-.64 0-1.6.16-2.08.32C10.24 10.56 14.4 5.44 18.56 3.2L15.68 0C6.72 4.16 0 12.48 0 20.8zm21.44 0C21.44 27.2 25.92 32 31.68 32 36.16 32 40 28.48 40 24s-3.2-7.68-7.04-7.68c-.64 0-1.6.16-2.08.32.8-6.08 4.96-11.2 9.12-13.44L37.12 0c-8.96 4.16-15.68 12.48-15.68 20.8z" fill="var(--maroon)"/>
-      </svg>
-      <blockquote>"They didn't just make it look good — they made it feel right. Every interaction, every detail. Working with Oven was the best decision we made for our product."</blockquote>
-      <div class="testimonial-author">
-        <div class="testimonial-avatar"></div>
-        <div>
-          <span class="testimonial-name">Alex Rivera</span>
-          <span class="testimonial-role">Founder, Terrace</span>
-        </div>
+  <!-- Second Statement -->
+  <section class="section statement">
+    <p class="hero-statement hero-statement--sm">We are a boutique studio that builds brands with intention and craft — no templates, no shortcuts. Every project is made from scratch with care.</p>
+  </section>
+
+  <!-- Our Approach -->
+  <section id="approach" class="section">
+    <div class="section-header">
+      <span class="section-label">Our Approach</span>
+    </div>
+    <div class="divider"></div>
+    <div class="approach-grid">
+      <div class="approach-text">
+        <p>Oven Design started from a simple belief: good design takes time, heat, and the right ingredients. What began as a small practice has grown into a trusted partner for brands seeking thoughtful, lasting work.</p>
+        <p>We've built our reputation on delivering design that balances commercial impact with creative integrity — establishing long-term relationships with clients who value craft as a strategic asset.</p>
+        <a href="#contact" class="arrow-link">About Us <span>&rarr;</span></a>
       </div>
+      <div class="approach-image"></div>
     </div>
   </section>
 
   <!-- Services -->
-  <section id="services" class="section services">
-    <div class="section-intro">
-      <span class="section-tag">Services</span>
-      <h2>What's on <span class="handwritten">the menu.</span></h2>
+  <section id="services" class="section">
+    <div class="section-header">
+      <span class="section-label">Services</span>
     </div>
+    <div class="divider"></div>
     <div class="services-grid">
-      <div class="service-card" style="--i:0">
-        <div class="service-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
-        </div>
+      <div class="service-item">
         <h3>Product Design</h3>
-        <p>Research to production — end-to-end product thinking for apps, platforms, and tools.</p>
+        <p>End-to-end product thinking for apps, platforms, and tools.</p>
       </div>
-      <div class="service-card" style="--i:1">
-        <div class="service-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-        </div>
-        <h3>UX Research</h3>
-        <p>User interviews, journey maps, and data-informed decisions that solve real problems.</p>
-      </div>
-      <div class="service-card" style="--i:2">
-        <div class="service-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><rect x="4" y="8" width="16" height="8" rx="1"/></svg>
-        </div>
-        <h3>UI &amp; Design Systems</h3>
-        <p>Pixel-perfect interfaces and scalable systems that keep your product consistent.</p>
-      </div>
-      <div class="service-card" style="--i:3">
-        <div class="service-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-        </div>
+      <div class="service-item">
         <h3>Brand Identity</h3>
         <p>Logos, color systems, typography, and guidelines that capture your essence.</p>
       </div>
-      <div class="service-card" style="--i:4">
-        <div class="service-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-        </div>
-        <h3>Motion &amp; Animation</h3>
-        <p>Micro-interactions, transitions, and visuals that bring your product to life.</p>
+      <div class="service-item">
+        <h3>UX / UI Design</h3>
+        <p>Pixel-perfect interfaces and scalable design systems.</p>
       </div>
-      <div class="service-card" style="--i:5">
-        <div class="service-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
-        </div>
+      <div class="service-item">
         <h3>Creative Direction</h3>
-        <p>Visual strategy and art direction to keep your brand cohesive everywhere.</p>
+        <p>Visual strategy and art direction to keep your brand cohesive.</p>
+      </div>
+      <div class="service-item">
+        <h3>Motion &amp; Animation</h3>
+        <p>Micro-interactions and visuals that bring your product to life.</p>
+      </div>
+      <div class="service-item">
+        <h3>UX Research</h3>
+        <p>User interviews, journey maps, and data-informed decisions.</p>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section id="faq" class="section faq">
-    <div class="section-intro">
-      <span class="section-tag">FAQ</span>
-      <h2>Common questions, <span class="handwritten">answered.</span></h2>
+  <section id="faq" class="section">
+    <div class="section-header">
+      <span class="section-label">FAQ</span>
     </div>
+    <div class="divider"></div>
     <div class="faq-list">
       <details class="faq-item" open>
         <summary>What does a typical project look like?</summary>
@@ -271,68 +143,33 @@
         <summary>Can you handle development too?</summary>
         <p>We focus on design, but we work closely with trusted dev partners and can manage the full handoff. Your engineers will love our deliverables.</p>
       </details>
-      <details class="faq-item">
-        <summary>What if I'm not sure what I need?</summary>
-        <p>That's totally fine. Book a call and we'll figure it out together. Sometimes the best projects start with "I'm not sure yet."</p>
-      </details>
-    </div>
-  </section>
-
-  <!-- Bottom CTA -->
-  <section id="contact" class="section cta-section">
-    <div class="cta-card">
-      <h2>Ready to cook up something <span class="handwritten">beautiful?</span></h2>
-      <p>Tell us about your project. We'll get back to you within 24 hours.</p>
-      <form class="cta-form" action="#" method="POST">
-        <div class="form-row">
-          <div class="form-field">
-            <label for="cta-name" class="sr-only">Name</label>
-            <input type="text" id="cta-name" name="name" placeholder="Name" required>
-          </div>
-          <div class="form-field">
-            <label for="cta-email" class="sr-only">Email</label>
-            <input type="email" id="cta-email" name="email" placeholder="Email" required>
-          </div>
-        </div>
-        <div class="form-field">
-          <label for="cta-subject" class="sr-only">Project type</label>
-          <input type="text" id="cta-subject" name="subject" placeholder="What do you need? (e.g. Product Design, Branding)">
-        </div>
-        <div class="form-field">
-          <label for="cta-message" class="sr-only">Message</label>
-          <textarea id="cta-message" name="message" rows="4" placeholder="Tell us about your project..." required></textarea>
-        </div>
-        <button type="submit" class="btn btn--full">Send Inquiry</button>
-      </form>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <a href="#" class="logo">oven design</a>
-        <p>Design, fresh out the oven.</p>
+  <footer id="contact" class="footer">
+    <div class="divider"></div>
+    <div class="footer-cta">
+      <a href="#" class="logo">oven design</a>
+      <h2 class="footer-title">Let's Talk</h2>
+      <a href="mailto:hello@oven.design" class="arrow-link">Get in Touch <span>&rarr;</span></a>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <a href="#work">Work</a>
+        <a href="#approach">Studio</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
       </div>
-      <div class="footer-links">
-        <div class="footer-col">
-          <span class="footer-heading">Studio</span>
-          <a href="#process">Process</a>
-          <a href="#work">Work</a>
-          <a href="#services">Services</a>
-          <a href="#faq">FAQ</a>
-        </div>
-        <div class="footer-col">
-          <span class="footer-heading">Connect</span>
-          <a href="#">Instagram</a>
-          <a href="#">Dribbble</a>
-          <a href="#">LinkedIn</a>
-          <a href="mailto:hello@oven.design">Email</a>
-        </div>
+      <div class="footer-col">
+        <a href="#">Instagram</a>
+        <a href="#">Dribbble</a>
+        <a href="#">LinkedIn</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 Oven Design. All rights reserved.</p>
+      <span>&copy; 2026 Oven Design</span>
+      <span>All rights reserved</span>
     </div>
   </footer>
 
