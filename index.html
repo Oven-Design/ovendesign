@@ -12,9 +12,8 @@
 <body>
   <a href="#hero" class="skip-link">Skip to content</a>
 
-  <!-- Navigation -->
   <nav class="navbar">
-    <a href="#" class="logo">oven design</a>
+    <a href="#hero" class="logo">oven design</a>
     <div class="nav-pill">
       <a href="#work">Work</a>
       <span class="nav-dot">&middot;</span>
@@ -23,72 +22,67 @@
       <a href="#faq">FAQ</a>
     </div>
     <a href="#contact" class="nav-cta">Contact</a>
-    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-mobile">&#9776;</button>
   </nav>
 
-  <!-- Mobile nav -->
-  <div class="nav-mobile">
+  <nav id="nav-mobile" class="nav-mobile" aria-label="Mobile navigation">
     <a href="#work">Work</a>
     <a href="#approach">Studio</a>
     <a href="#faq">FAQ</a>
     <a href="#contact">Contact</a>
-  </div>
+  </nav>
 
-  <!-- Hero Statement -->
   <header id="hero" class="section hero">
     <h1 class="hero-statement">We craft brands and digital experiences with warmth and precision — baked to perfection, designed to leave a lasting impression.</h1>
   </header>
 
-  <!-- Featured Work -->
   <section id="work" class="section">
     <div class="section-header">
-      <span class="section-label">Featured Work</span>
+      <h2 class="section-label">Featured Work</h2>
       <a href="#work" class="arrow-link">View All <span>&rarr;</span></a>
     </div>
     <div class="divider"></div>
     <div class="work-grid">
-      <article class="work-card">
+      <a class="work-card" href="#">
         <div class="work-image"></div>
         <h3 class="work-title">Project Name</h3>
         <p class="work-meta">Product Design</p>
-      </article>
-      <article class="work-card">
+      </a>
+      <a class="work-card" href="#">
         <div class="work-image work-image--alt"></div>
         <h3 class="work-title">Project Name</h3>
         <p class="work-meta">Brand Identity</p>
-      </article>
-      <article class="work-card">
+      </a>
+      <a class="work-card" href="#">
         <div class="work-image work-image--alt2"></div>
         <h3 class="work-title">Project Name</h3>
         <p class="work-meta">UX / UI</p>
-      </article>
-      <article class="work-card">
+      </a>
+      <a class="work-card" href="#">
         <div class="work-image work-image--alt"></div>
         <h3 class="work-title">Project Name</h3>
         <p class="work-meta">Motion &amp; Branding</p>
-      </article>
-      <article class="work-card">
+      </a>
+      <a class="work-card" href="#">
         <div class="work-image work-image--alt2"></div>
         <h3 class="work-title">Project Name</h3>
         <p class="work-meta">Creative Direction</p>
-      </article>
-      <article class="work-card">
+      </a>
+      <a class="work-card" href="#">
         <div class="work-image"></div>
         <h3 class="work-title">Project Name</h3>
         <p class="work-meta">Brand Identity</p>
-      </article>
+      </a>
     </div>
   </section>
 
-  <!-- Second Statement -->
   <section class="section statement">
     <p class="hero-statement hero-statement--sm">We are a boutique studio that builds brands with intention and craft — no templates, no shortcuts. Every project is made from scratch with care.</p>
   </section>
 
-  <!-- Our Approach -->
   <section id="approach" class="section">
     <div class="section-header">
-      <span class="section-label">Our Approach</span>
+      <h2 class="section-label">Our Approach</h2>
     </div>
     <div class="divider"></div>
     <div class="approach-grid">
@@ -101,10 +95,9 @@
     </div>
   </section>
 
-  <!-- Services -->
   <section id="services" class="section">
     <div class="section-header">
-      <span class="section-label">Services</span>
+      <h2 class="section-label">Services</h2>
     </div>
     <div class="divider"></div>
     <div class="services-grid">
@@ -135,10 +128,9 @@
     </div>
   </section>
 
-  <!-- FAQ -->
   <section id="faq" class="section">
     <div class="section-header">
-      <span class="section-label">FAQ</span>
+      <h2 class="section-label">FAQ</h2>
     </div>
     <div class="divider"></div>
     <div class="faq-list">
@@ -161,11 +153,10 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer id="contact" class="footer">
     <div class="divider"></div>
     <div class="footer-cta">
-      <a href="#" class="logo">oven design</a>
+      <a href="#hero" class="logo">oven design</a>
       <h2 class="footer-title">Let's Talk</h2>
       <a href="mailto:hello@oven.design" class="arrow-link">Get in Touch <span>&rarr;</span></a>
     </div>
@@ -177,9 +168,9 @@
         <a href="#contact">Contact</a>
       </div>
       <div class="footer-col">
-        <a href="#">Instagram</a>
-        <a href="#">Dribbble</a>
-        <a href="#">LinkedIn</a>
+        <a href="#" rel="noopener">Instagram</a>
+        <a href="#" rel="noopener">Dribbble</a>
+        <a href="#" rel="noopener">LinkedIn</a>
       </div>
     </div>
     <div class="footer-bottom">
@@ -188,6 +179,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script defer src="js/main.js"></script>
 </body>
 </html>
