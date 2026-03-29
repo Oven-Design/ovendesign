@@ -195,16 +195,16 @@ summary:focus-visible {
 }
 
 .hero-statement {
-  font-size: clamp(2rem, 4.5vw, 3.5rem);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
   font-weight: 300;
-  line-height: 1.35;
-  letter-spacing: -0.02em;
-  color: var(--white);
-  max-width: 1050px;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+  color: var(--gray-100);
+  max-width: 900px;
 }
 
 .hero-statement--sm {
-  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  font-size: clamp(1.35rem, 2.5vw, 2rem);
 }
 
 /* ===== Work Grid ===== */
