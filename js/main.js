@@ -1,44 +1,24 @@
-// Mobile nav toggle
 const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelector('.nav-links');
+const navMobile = document.querySelector('.nav-mobile');
 
-navToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-});
+if (navToggle && navMobile) {
+  navToggle.addEventListener('click', () => {
+    const isOpen = navMobile.classList.toggle('active');
+    navToggle.setAttribute('aria-expanded', isOpen);
+  });
 
-navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => navLinks.classList.remove('active'));
-});
+  navMobile.addEventListener('click', (e) => {
+    if (e.target.matches('a')) {
+      navMobile.classList.remove('active');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
 
-// Navbar border on scroll
-const navbar = document.querySelector('.navbar');
-
-window.addEventListener('scroll', () => {
-  navbar.style.borderBottomColor = window.scrollY > 50
-    ? 'rgba(26, 18, 7, 0.08)'
-    : 'transparent';
-}, { passive: true });
-
-// Page load
-window.addEventListener('DOMContentLoaded', () => {
-  requestAnimationFrame(() => document.body.classList.add('loaded'));
-});
-
-// Reveal on scroll
-const revealEls = document.querySelectorAll(
-  '.process-card, .work-card, .service-card'
-);
-
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('revealed');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.12, rootMargin: '0px 0px -30px 0px' }
-);
-
-revealEls.forEach((el) => revealObserver.observe(el));
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navMobile.classList.contains('active')) {
+      navMobile.classList.remove('active');
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.focus();
+    }
+  });
+}
