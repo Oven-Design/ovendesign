@@ -80,11 +80,13 @@ summary:focus-visible {
 }
 
 .logo {
-  font-family: var(--font-pixel);
-  font-size: 1rem;
-  font-weight: 400;
-  color: var(--white);
-  letter-spacing: 0.02em;
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 2rem;
+  width: auto;
 }
 
 .nav-pill {
