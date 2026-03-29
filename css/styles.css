@@ -298,7 +298,7 @@ summary:focus-visible {
 
 /* ===== FAQ ===== */
 .faq-list {
-  max-width: 800px;
+  max-width: 100%;
 }
 
 .faq-item {
