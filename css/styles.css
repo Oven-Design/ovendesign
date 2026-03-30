@@ -453,22 +453,27 @@ summary:focus-visible {
   .footer-links { flex-direction: column; gap: 2rem; }
 }
 
+/* ===== Nav Right Group ===== */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 /* ===== Theme Toggle ===== */
 .theme-toggle {
   background: none;
-  border: 1px solid var(--border-color);
-  border-radius: 100px;
+  border: none;
   color: var(--fg);
   font-size: 1.125rem;
   cursor: pointer;
-  padding: 0.4rem 0.65rem;
+  padding: 0.4rem;
   line-height: 1;
-  transition: background var(--transition), color var(--transition);
+  transition: color var(--transition);
 }
 
 .theme-toggle:hover {
-  background: var(--fg);
-  color: var(--bg);
+  color: var(--fg-muted);
 }
 
 /* Invert logo in light mode */
